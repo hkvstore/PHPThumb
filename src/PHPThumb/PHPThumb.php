@@ -65,8 +65,8 @@ abstract class PHPThumb
 
         $this->plugins = array();
 
-        if (is_array(plugins)) {
-            $cnt = count(plugins);
+        if (is_array($plugins)) {
+            $cnt = count($plugins);
             for ($i = 0; $i < $cnt; $i++) {
                 if ($plugins[$i] instanceof \PHPThumb\PluginInterface)
                     $this->$plugins[] = $plugins[$i];
